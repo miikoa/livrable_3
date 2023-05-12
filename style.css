@@ -329,6 +329,10 @@ i.fa-circle-info {
 /* code commun à Hébergements, populaires et activites */
 
 .hebergements a, .activites a, .populaires a {
+<<<<<<< HEAD
+=======
+    /* width: 100%; *** pourquoi vous avez mis le largeur à 100% pour le <a> *** */
+>>>>>>> 3faf666d79d987061c36ca62a037203f68f149c6
     margin: 0;
     padding: 0;
 }
