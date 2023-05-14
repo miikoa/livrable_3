@@ -1,0 +1,7 @@
+{
+    "editor.defaultFormatter": "GitHub.copilot",
+    "editor.formatOnSave": true,
+    "editor.formatOnType": true,
+    "html.format.indentHandlebars": true,
+    "html.format.indentInnerHtml": true
+}
