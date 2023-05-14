@@ -462,6 +462,48 @@ i.fa-circle-info {
 	margin-bottom: 5px;
 }
 
+/****** Activités ***********/
+
+.Activités{ 
+	width: 100%;
+	display: flex;
+	gap: 30px;
+}
+
+.Activités-card {
+	display: flex;
+	justify-content: space-between;
+	gap: 30px;
+}
+
+.Activités-card .card {
+	width: auto;
+}
+
+.Activités-card img {
+	width: 100%;
+	height: 380px;
+	border-radius: 20px 20px 0px 0px; 
+}
+.activités .section-title{
+	margin: 0;
+	font-size: 22px;
+}
+.Activités-card .card-content {
+	padding-left: 15px; 
+	box-sizing: border-box;
+}
+
+.activités .card-link{
+	font-size: 18px;
+	font-weight: 700;
+	color: #000;
+}
+
+.Activités-card. .card-link{
+	width: calc(25% - 20px)
+}
+
 /* Le code ci-dessous correspond Ã  la version responsive uniquement */
 
 /****** Media queries ***********/
