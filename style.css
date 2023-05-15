@@ -72,7 +72,7 @@ ul {
 }
 
 h1,
-h2,
+
 h3,
 h4,
 h5,
@@ -463,17 +463,16 @@ i.fa-circle-info {
 }
 
 /****** Activités ***********/
-
 .Activités{ 
 	width: 100%;
 	display: flex;
-	gap: 30px;
 }
 
 .Activités-card {
 	display: flex;
 	justify-content: space-between;
 	gap: 30px;
+	margin-top: 30px;
 }
 
 .Activités-card .card {
@@ -485,23 +484,26 @@ i.fa-circle-info {
 	height: 380px;
 	border-radius: 20px 20px 0px 0px; 
 }
-.activités .section-title{
-	margin: 0;
-	font-size: 22px;
-}
-.Activités-card .card-content {
-	padding-left: 15px; 
-	box-sizing: border-box;
+
+.Activités-card  .card-title {
+	margin: 20px 19px 20px 19px;
 }
 
-.activités .card-link{
+#Marseille-title h2 {
+  margin: 30px;
+  font-size: 22px;
+  font-weight: 700;
+}
+
+
+ .Activités-card .card-link{
 	font-size: 18px;
 	font-weight: 700;
 	color: #000;
 }
 
-.Activités-card. .card-link{
-	width: calc(25% - 20px)
+.Activités-card .card-link{
+	width: calc(25% - 20px);
 }
 
 /* Le code ci-dessous correspond Ã  la version responsive uniquement */
