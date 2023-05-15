@@ -506,6 +506,28 @@ i.fa-circle-info {
 	width: calc(25% - 20px);
 }
 
+/****** Footer ***********/
+.footer {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	margin-top: 35px;
+}
+
+.footer .footer-list {
+	list-style: none;
+	display: flex;
+	gap: 30px;
+}
+
+.list{
+	list-style: none;
+}
+
+.footer li{
+	margin-top: 15px;
+	font-size: 16px;
+}
 /* Le code ci-dessous correspond Ã  la version responsive uniquement */
 
 /****** Media queries ***********/
