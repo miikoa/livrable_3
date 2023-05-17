@@ -521,8 +521,17 @@ i.fa-circle-info {
 	align-items: center;
 }
 	
+.footer .footer-article{
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+	align-items: center;
+	width: 100%;
+
+}
 .footer-list {
 	display: flex;
+	flex-wrap: wrap;
 }
 
 .footer-link a {
@@ -530,7 +539,7 @@ i.fa-circle-info {
 	padding: 0;
 	margin: 0;
 	display: flex;
-	width: 35%;
+	width: calc(33% - 20px);
 }
 
 .footer .list{
