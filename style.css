@@ -466,23 +466,19 @@ i.fa-circle-info {
 .Activités-card{ 
 	width: 100%;
 	display: flex;
-	gap: 30px;
-}
-
-#Marseille-title {
-	margin: 30px;
-	font-size: 22px;
-	font-weight: 700;
 }
 
  .Activités-card .card-link{
 	display: flex;
-	width: calc(25% - 20px);
+	width: calc(25% - 20px);/* this code is not begin implemented due to style being overriden by article display:block */
+
 	font-size: 18px;
 	font-weight: 700;
 	color: #000;
 	margin: 30px;
-}
+	gap: 30px;
+} 
+
 
 .Activités-card .card {
 	box-shadow: 0px 3px 15px 0px rgba(0, 0, 0, 0.1);
@@ -498,6 +494,11 @@ i.fa-circle-info {
 	margin: 20px 19px 20px 19px;
 }
 
+#Marseille-title {
+	margin: 30px;
+	font-size: 22px;
+	font-weight: 700;
+}
 /****** Footer ***********/
 .footer {
 	display: flex;
