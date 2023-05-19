@@ -26,10 +26,10 @@
 								<a href="#"><img class="logo" src="images/logo/Booki.png" alt="Booki"></a>
 							</li>
 							<li>
-								<a class="link" href="“#”">Hébergements</a>
+								<a class="link" href="#link-hebergement">Hébergements</a>
 							</li>
 							<li>
-								<a class="link" href="“#”">Activités</a>
+								<a class="link" href="#link-activites">Activités</a>
 							</li>
 						</ul>
 					</div>
@@ -43,7 +43,9 @@
 					</div>
 					<div class="search-bar">
 						<form class="search-bar-form">
-							<i class="fa-solid fa-location-dot"></i>
+							<div class="search-bar-icon">
+								<i class="fa-solid fa-location-dot"></i>
+							</div>
 							<input class="search-input" type="text" id="hébergement" name="hébergement"
 								required="required" placeholder="Marseille, France" autofocus>
 							<button type="submit">Recherche</button>
@@ -51,9 +53,9 @@
 					</div>
 					<div class="filtres-container">
 						<ul class="filtres-list">
-							<li>Filtres</li>
+							<li class="filtre-list-1">Filtres</li>
 							<li class="filtres-hover">
-								<a href="#"><i class="fa-solid fa-money-bill-wave"></i> Économique</a>
+								<a href="#"><i class="fa-solid fa-money-bill-wave"></i>Économique</a>
 							</li>
 							<li class="filtres-hover">
 								<a href="#"><i class="fa-solid fa-person"></i>Familial</a>
@@ -74,12 +76,10 @@
 					</div>
 				</section>
 				<div class="hebergements-and-populaires">
-					<section class="hebergements">
-						<a href="#" class="Hebergements-page-link">
+					<section id="link-hebergement" class="hebergements">
 							<h2 class="hebergements-title section-title">
 								Hébergements à Marseille
 							</h2>
-						</a>
 						<div class="hebergements-cards">
 							<a class="card-link" href="#">
 								<article class="card">
@@ -296,13 +296,11 @@
 				</div>
 				<div>
 				</div>
-				<section class="Activités">
-					<div class="Activités-title">
-						<a class="card-link" href="#">
+				<section id="link-activites" class="activites">
+					<div class="Activites-title">
 							<h2 id="Marseille-title">Activités à Marseille</h2>
-						</a>
 					</div>
-					<div class="Activités-card">
+					<div class="Activites-card">
 						<a class="card-link" href="#">
 							<article class="card">
 								<img src="images/activites/Vieux_port.jpg" alt="Vieux-Port">
@@ -342,43 +340,40 @@
 			<footer>
 				<!-- W3C gave me an error message here because I do not have a title but there isn't a title on the mockup. What to do? -->
 				<section class="footer">
-					<div class="footer main-container">
-						<a class="footer-link" href="#">
-							<article class="propos footer-article">
-								<!-- in dev tools display:block is being added with the article in this section. How to override?  -->
-								<div class="content">
-									<h3 class="card-title">À propos</h3>
-									<ul class="list">
-										<li>Fonctionnement du site</li>
-										<li>Conditions générales</li>
-										<li>Données et confidentialité</li>
-									</ul>
-								</div>
-							</article>
-						</a>
-						<a class="footer-link" href="#">
-							<article class="nos-hébergements footer-article">
-								<div class="content">
-									<h3 class="card-title">Nos hébergements</h3>
-									<ul class="list">
-										<li>Charte qualité</li>
-										<li>Proposer votre hôtel</li>
-									</ul>
-								</div>
-							</article>
-						</a>
-						<a class="footer-link" href="#">
-							<article class="assistance footer-article">
-								<div class="content">
-									<h3 class="card-title">Assistance</h3>
-									<ul class="list">
-										<li>Centre d'aide</li>
-										<li>Nous contacter</li>
-									</ul>
-								</div>
-							</article>
-						</a>
-					</div>
+
+					<article class="propos footer-article">
+						<div class="content">
+							<h3 class="card-title">À propos</h3>
+							<ul class="list">
+								<li><a href="#">Fonctionnement du site</a></li>
+								<li><a href="#">Conditions générales</a></li>
+								<li><a href="#">Données et confidentialité</a></li>
+							</ul>
+						</div>
+					</article>
+
+
+					<article class="nos-hébergements footer-article">
+						<div class="content">
+							<h3 class="card-title">Nos hébergements</h3>
+							<ul class="list">
+								<li><a href="#">Charte qualité</a></li>
+								<li><a href="#">Proposer votre hôtel</a></li>
+							</ul>
+						</div>
+					</article>
+
+
+					<article class="assistance footer-article">
+						<div class="content">
+							<h3 class="card-title">Assistance</h3>
+							<ul class="list">
+								<li><a href="#">Centre d'aide</a></li>
+								<li><a href="#">Nous contacter</a></li>
+							</ul>
+						</div>
+					</article>
+
 				</section>
 			</footer>
 		</div>
