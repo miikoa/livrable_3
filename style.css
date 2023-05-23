@@ -409,6 +409,7 @@ i.fa-circle-info {
   height: 136px;
   border-radius: 20px 20px 0px 0px;
 }
+
 .hebergements-cards .card-content {
   padding-left: 15px;
   box-sizing: border-box;
@@ -598,9 +599,14 @@ footer .list li {
   .populaires-cards .card-subtitle {
     font-size: 13px;
   }
+  
+}
+/* Medium devices (tablets, between 1024px and 1440px) */
+@media (min-width: 1024px) and (max-width: 1440px) {
+  /* Add styles specific to this range */
+}
+/* Large devices (desktops, less/equal than 1440px) */
+@media (max-width: 1440px) {
+  /* Add styles specific to this range */
 }
 
-/* Small devices (phones, less than 768px) */
-@media (max-width: 767.98px) {
-  /* ... */
-}
