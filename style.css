@@ -6,6 +6,7 @@
 
 * {
   font-family: "Raleway", sans-serif;
+  /* box-sizing: border-box; */
 }
 
 a {
@@ -51,6 +52,7 @@ body {
   display: flex;
   width: 100%;
   flex-direction: column;
+  box-sizing: border-box;
 }
 
 .card img {
@@ -160,6 +162,9 @@ a li {
   border-radius: 50%;
   text-align: center;
   padding: 0.5em;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .info {
@@ -178,8 +183,6 @@ a li {
 }
 
 .search-bar-icon{
-  width: 10%;
-  padding: 15px 18px 16px 18px;
   height: auto;
   margin: 0px;
 }
@@ -370,6 +373,7 @@ i.fa-circle-info {
 .card-subtitle {
   font-size: 14px;
 }
+
 .hebergements-cards .card-rating,
 .populaires-cards .card-rating {
   margin-bottom: 10px;
@@ -475,7 +479,7 @@ i.fa-circle-info {
 }
 
 /****** Activités ***********/
-.Activites {
+.activites {
   margin: 0 30px;
 }
 
@@ -515,6 +519,7 @@ i.fa-circle-info {
   font-size: 22px;
   font-weight: 700;
 }
+
 /****** Footer ***********/
 .footer {
   margin-top: 65px;
@@ -558,6 +563,7 @@ i.fa-circle-info {
 footer .card-title {
   /* margin-top: 20px; */
 }
+
 footer .list li {
   margin-top: 15px;
   font-size: 16px;
@@ -597,7 +603,7 @@ footer .list li {
     justify-content: space-between;
   }
 
-  .populaires-cards .card {
+  .populaires-cards .card-link {
     width: 30%;
   }
 
