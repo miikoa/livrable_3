@@ -176,7 +176,7 @@ input.search-input {
   padding: 14px 24px;
   border: 1px solid var(--main-bg-color);
   font-size: 1.1em;
-}
+}/**note: for the font size of input remember that it must be in em and NOT px as this ensures that the users content stays proportional b/c user input becomes the child and is now relative to the 'form' who is the parent**/
 
 .search-bar .search-bar-form button {
   background-color: #0065fc;
@@ -197,9 +197,6 @@ input.search-input {
   border-bottom-left-radius: 15px;
   font-size: 1.1em;
   margin: 0px;
-}
- 
-.fa-location-dot {
   color: #000;
 }
 
@@ -249,11 +246,6 @@ input.search-input {
 
 .filters-list li:not(:nth-child(1)) {
   font-size: 17px;
-}
-
-.filtres-container .filters-list li {
-  display: flex;
-  align-items: center;
 }
 
 .filtres-container ul li.filtre-list-1 {
@@ -375,7 +367,6 @@ i.fa-circle-info {
 }
 
 /****** Hébergements ***********/
-
 .hebergements {
   width: 66%;
   display: flex;
@@ -463,19 +454,18 @@ i.fa-circle-info {
 .populaires-cards .card-rating {
   margin-bottom: 5px;
 }
-
 /****** Activités ***********/
 .activites {
   margin: 0 30px;
 }
 
-.Activites-card {
+.activites-card {
   width: 100%;
   display: flex;
   gap: 30px;
 }
 
-.Activites-card .card-link {
+.activites-card .card-link {
   display: flex;
   width: calc(
   25% - 22.5px);
@@ -484,28 +474,27 @@ i.fa-circle-info {
   color: #000;
 }
 
-.Activites-card .card {
+.activites-card .card {
   box-shadow: 0px 3px 15px 0px rgba(0, 0, 0, 0.1);
   padding: 0;
 }
 
-.Activites-card img {
+.activites-card img {
   width: 100%;
   height: 380px;
   border-radius: 20px 20px 0px 0px;
 }
 
-.Activites-card .card-title {
+.activites-card .card-title {
   margin: 20px 19px 20px 19px;
 }
 
-#Marseille-title {
+#marseille-title {
   margin-top: 65px;
   margin-bottom: 30px;
   font-size: 22px;
   font-weight: 700;
 }
-
 /****** Footer ***********/
 .footer {
   margin-top: 65px;
@@ -544,10 +533,6 @@ i.fa-circle-info {
 
 .footer .list {
   list-style: none;
-}
-
-footer .card-title {
-  /* margin-top: 20px; */
 }
 
 footer .list li {
