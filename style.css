@@ -505,12 +505,6 @@ i.fa-circle-info {
   width: 100%;
 }
 
-.footer .main-container {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-}
-
 .footer .footer-article {
   display: flex;
   flex-direction: column;
