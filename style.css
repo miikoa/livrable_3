@@ -113,10 +113,6 @@ p {
   padding-top: 30px;
 }
 
-a li {
-  color: #000;
-}
-
 .nav-list :first-child {
   flex: 2;
 }
@@ -132,7 +128,6 @@ a li {
   color: var(--main-color);
   border-top: solid var(--main-color) 2px;
 }
-
 /****** info-group ***********/
 .headline {
   margin-bottom: 35px;
@@ -143,7 +138,7 @@ a li {
   font-weight: 700;
   font-size: 22px;
   line-height: 26px;
-}
+}/****note: in the future, consider adding style info for h1 and p in the root at the start of code***/
 
 .headline p {
   font-weight: 400;
@@ -164,12 +159,6 @@ a li {
   align-items: center;
 }
 
-.info {
-  display: flex;
-  flex-direction: row;
-  flex-wrap: nowrap;
-  align-items: center;
-}
 /****** Search Bar _1 ***********/
 .search-bar-form {
   display: flex;
