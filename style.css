@@ -36,7 +36,7 @@ body {
   max-width: 1440px;
   padding: 0 50px;
   box-sizing: border-box;
-}
+}/**consider also setting a min-width at 1024 to make the page responsive**/
 
 .section-title {
   margin: 0;
@@ -48,7 +48,6 @@ body {
   border-radius: 20px;
   padding: 5px;
   filter: drop-shadow(0px 3px 15px rgba(0, 0, 0, 0.1));
-
   display: flex;
   width: 100%;
   flex-direction: column;
@@ -57,7 +56,7 @@ body {
 
 .card img {
   object-fit: cover;
-}
+}/****note: object-fit: cover; is used to ensure that the image is not distorted when the user resizes the window****/
 
 .card-title {
   font-size: 16px;
@@ -71,7 +70,7 @@ body {
   color: var(--main-bg-color);
 }
 
-/****** RESET ***********/
+/****** RESET to eliminate styling issues that occurred on page earlier***********/
 ul {
   margin: 0;
   padding: 0;
@@ -98,6 +97,7 @@ p {
   line-height: 18.78;
   text-decoration: none;
 }
+
 .nav-list {
   list-style: none;
   margin: 0;
@@ -111,20 +111,20 @@ p {
   height: 19px;
   width: auto;
   padding-top: 30px;
-}
+}/** reminder  to self: when using height and width, use auto for the fixed element and auto for the othere**/
 
 .nav-list :first-child {
-  flex: 2;
+  flex: 2;/**note: flex: 2; is used to ensure that the first child takes up 2x the space of the other children**/
 }
 
 .nav-list .link {
   color: #000;
   text-decoration: none;
-  border-top: 1px solid transparent;
+  border-top: 1px solid transparent;/*note: this is used to ensure that the border is transparent until the user hovers over the link**/
   padding: 14px;
 }
 
-.nav-list .link:hover {
+.nav-list .link:hover {/**reminder to self: when using hover, use the class name and then :hover**/
   color: var(--main-color);
   border-top: solid var(--main-color) 2px;
 }
@@ -202,7 +202,7 @@ input.search-input {
 
 .search-input::placeholder {
   color: #000;
-  font-size: 1.1em;
+  font-size: 1.1em;/**note: for the font size of input remember that it must be in em and NOT px as this ensures that the users content stays proportional b/c user input becomes the child and is now relative to the 'form' who is the parent**/
   padding: 14px 19px 14px 19px;
   border-left: none;
   border-right: none;
@@ -242,10 +242,10 @@ input.search-input {
 .filtres-list li :nth-child(1) {
   font-size: 18px;
   line-height: 21.13px;
-}
+}/***as far as difficulties, this was a problem as it would not render the correct solution thus I had to problem solve by adding the :nth-child(1) to the css**/
 
 .filters-list li:not(:nth-child(1)) {
-  font-size: 17px;
+  font-size: 17px;/** use multiple selectors or class names next time instead to ensure that the correct style is applied to the correct element**/
 }
 
 .filtres-container ul li.filtre-list-1 {
@@ -376,7 +376,7 @@ i.fa-circle-info {
 
 .hebergements-cards {
   display: flex;
-  flex-flow: row wrap;
+  flex-flow: row wrap;/**review this more carefully next time as it is an element that is new to me**/
   justify-content: space-between;
   gap: 30px;
 }
@@ -386,14 +386,14 @@ i.fa-circle-info {
 }
 
 .hebergements-cards img {
-  width: 100%;
+  width: 100%;/**having the width at 100% for the image challenging***/
   height: 136px;
   border-radius: 20px 20px 0px 0px;
 }
 
 .hebergements-cards .card-content {
   padding-left: 15px;
-  box-sizing: border-box;
+  box-sizing: border-box;/**I had to place the box-sizing here as it was not rendering the correct solution**/
 }
 
 .hebergements-link {
@@ -407,7 +407,7 @@ i.fa-circle-info {
 }
 
 .hebergements-cards .card-link {
-  width: calc(33.3% - 20px);
+  width: calc(33.3% - 20px);/**I had to add the calc function to the width **/
 }
 
 /****** Populaires ***********/
@@ -465,7 +465,7 @@ i.fa-circle-info {
   gap: 30px;
 }
 
-.activites-card .card-link {
+.activites-card .card-link {/**I had to add the width to the card-link and must remember this for the future **/
   display: flex;
   width: calc(
   25% - 22.5px);
@@ -509,9 +509,10 @@ i.fa-circle-info {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-  align-items: flex-start;
+  align-items: flex-start;/**I had to add the align-items w/ flex-start so  that they'd be up top to the footer-article and must remember this for the future **/
   width: 100%;
 }
+
 .footer-list {
   display: flex;
   flex-wrap: wrap;
